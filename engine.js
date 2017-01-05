@@ -8,7 +8,7 @@ var rightPad = require('right-pad');
 // This can be any kind of SystemJS compatible module.
 // We use Commonjs here, but ES6 or AMD would do just
 // fine.
-exports['default'] = function (options) {
+module.exports = function (options) {
 
   var types = options.types;
 
@@ -92,5 +92,3 @@ exports['default'] = function (options) {
     }
   };
 };
-
-module.exports = exports;
